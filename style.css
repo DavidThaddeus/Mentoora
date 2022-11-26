@@ -1,0 +1,1299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.sectionP{
+    padding-top: 130px  !important;
+}
+        /* --------NAVIGATION----------- */
+nav {
+    display: flex;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgba(34, 51, 51, 0.342);
+    padding: 20px 15px 20px 10px;
+}
+
+nav .logo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-left: 30px;
+} 
+
+.logoImg {
+    width: 60px;
+    height: 60px;
+}
+
+.logoImg img {
+    border-radius: 50%;
+}
+
+.logoText {
+    padding-top: 5px;
+}
+
+.logoText h4 {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.logoText h4 span {
+    color:blue;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+nav ul li {
+    padding-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}
+
+nav ul li a:hover::before {
+    content: '';
+    width: 70px;
+    height: 1.5px;
+    background-color: #000;
+    position: absolute;
+    top: 100px;
+    transition: 3s;
+}
+
+/* ------------BANNER--------------- */
+#banner {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.596)), url(images/happy.jpg);
+    background-size: cover;
+}
+
+#banner .bannerContainer {
+    min-height: 100vh;
+    padding-top: 300px;
+    padding-left:80px;
+}
+
+.bannerContainer h2 {
+    font-size: 45px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.bannerContainer p {
+    color: #fff;
+    font-size: 18px;
+    max-width: 850px;
+}
+
+.btn1 {
+    padding: 10px 40px 10px 40px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color:#fff;
+    color: blue;
+    border: none;
+}
+
+.btn1 h3 {
+    color: #000;
+    font-size: 14px;
+}
+
+
+
+.btn1 i {
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.btn1 h3:hover {
+    color: #fff;
+    background-color: blue;
+    transform: scale(1.14);
+}
+
+#about {
+    padding: 100px 50px 30px 50px;
+}
+
+.aboutPack {
+    padding: 25px 0px 40px 0px;
+}
+
+.aboutPack h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.aboutPack h2 span {
+    color: #0000ff;
+    font-size: 55px;
+}
+
+.aboutPack p {
+    font-size: 16.4px;
+}
+
+#about hr {
+    color: #000;
+    margin: 10px 0 10px 0;
+}
+
+.mission h2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mission h2 i {
+    color: #000;
+}
+
+.principle p  {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* -------------GET STARTED--------------- */
+#enroll, 
+.enroll {
+    background:linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.726)), url(images/gold2.jpg);
+    background-size: cover;
+    padding: 80px 10px 80px 80px;
+    min-height: 75vh;
+    background-attachment: fixed;
+}
+
+#enroll h3,
+.enroll h3 {
+    color: #fff;
+    padding-bottom:15px ;
+}
+
+#enroll h2,
+.enroll h2 {
+    color: #fff;
+    font-size: 35px;
+}
+
+#enroll h2 span,
+.enroll h2 span {
+    color: #fff;
+}
+
+#enroll:hover > h2 span,
+.enroll:hover > h2 span {
+    color: blue;
+}
+
+#enroll .btn1 a ,
+.enroll .btn1 a {
+    color: #000;
+    font-size: 15px;
+}
+
+.btn1:hover  {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+#enroll .btn1:hover a,
+.enroll .btn1:hover a {
+    color: #fff;
+}
+    
+
+
+#enroll i, 
+.enroll i {
+    color: #fff;
+    display: inline-block;
+    font-size: 25px;
+    background-color: green;
+    padding: 6px;
+    margin: 10px 2px 2px 2px;
+}
+
+#enroll #tweet,
+.enroll #tweet {
+    background-color: #0000ff;
+}
+
+/* -----------The Team------------ */
+#team {
+    padding: 115px 20px 10px 20px;
+    background-color: lavender;
+}
+
+/* .teamPack {
+
+} */
+
+.teamPack h2 {
+    font-size: 43px;
+    padding: 2px 2px 10px 2px;
+} 
+
+.teamPack h2 span {
+    color: #0000ff;
+    font-size: 50px;
+}
+
+.teamPack h2::before {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 70px;
+    height: 2px;
+}
+.teamImg {
+    width: 400px;
+    height: 400px;
+}
+
+.founder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px 30px 50px;
+}
+
+.teamImg {
+    width: 390px;
+    height: 410px;
+    /* box-shadow: 2px 3px 3px #000; */
+    border: 10px solid #fff;
+}
+
+.story {
+    width: 400px;
+    padding: 0 2px 2px 10px;
+}
+
+.story h3 {
+    color: #0000ff;
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+
+.story h5 {
+    padding-bottom: 3px;
+}
+.story span {
+    color: red;
+}
+
+.story p {
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+.team2 {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0 20px 0;
+    justify-content: center;
+}
+
+.asstTeam {
+   display: flex;
+   flex-direction: column;
+}
+
+.asstTeam h3 {
+    padding-bottom: 5px;
+    color: #0000ff;
+    font-size: 25px;
+}
+
+
+.asstTeam p {
+    font-weight: 550;
+}
+/* .story2 {
+    display: none;
+}
+
+.team2Img img:hover {
+    display: none;
+} */
+
+/* hover */
+/* .team2Img:hover .story2 {
+    position: relative;
+    display: block;
+}
+
+.team2Img:hover  img {
+    display: none;
+}
+.story2 {
+    display: none;
+    padding-top: 40px;
+} */
+
+/* -------------FAQ---------------- */
+/* Style the buttons that are used to open and close the accordion panel */
+
+#faq {
+    padding: 50px;
+    background:linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.404)), blue;
+}
+
+#faq h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  #faq button {
+    padding-bottom: 20px;
+    /* margin-bottom: 15px; */
+  }
+
+  #faq button span {
+    font: 40px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 15px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: 3s ease-in-out;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  #close{
+    display: none;
+  }
+
+  /*-----------Testimonials-----------*/
+
+#testimonials {
+    background-color: #444;
+    margin: 0;
+    padding: 50px;
+}
+
+.testimonials h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.testimonials h1::before {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 90px;
+    height: 2px;
+}
+
+.testimonials h1 span {
+    color: #0000ff;
+    font-size: 50px;
+}
+
+/* .testiPack {
+     display: flex; 
+     flex-direction: row; 
+} */
+
+.testiContainer {
+    background-color: lavender;
+    width: 600px;
+    padding: 50px 20px 50px 5px;
+    margin-left: 200px ;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.testiContainer hr {
+    color: #0000ff;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.testiTop .logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+    margin-bottom: 50px;
+}
+
+.testiTop .logo .logoImg {
+    width: 45px;
+    height: 45px;
+    margin-top: px;
+}
+
+.testiTop .logo .logoText h4  {
+    font-size: 16px;
+}
+
+.studentPack {
+    display: flex;
+    flex-direction: row;
+}
+
+.testiContainer h5 {
+    font-size: 18px;
+    font-weight: 650;
+    padding-left: 43px;
+    padding-top: 50px;
+}
+
+.testiImg {
+    width: 180px;
+    height: 170px;
+    border: 5px solid blue;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-left: 30px;
+}
+
+.testiSpeech {
+    width: 346px;
+    padding-left: 10px;
+}
+
+
+/* ---------CAROUSEL-------- */
+
+ /* Slideshow container */
+ .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: rgb(21, 21, 189);
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+.prev {
+    background-color: #0000ff;
+    border-radius: 3px 0 0 3px;
+}
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* rgba(211, 202, 202, 0.473) */
+
+  /* ---------OUR COURSES----- */
+  #courses {
+    background-color:#000; 
+    padding: 50px  10px 900px 10px;
+    width: 100%;
+}
+
+.courseTopic {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.courseTopic h2 {
+    color: #0000ff;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.line {
+    width: 3px;
+    height: 728px;
+    background-color: #0000ff;
+    position: absolute;
+    margin-top: 50px;
+    left: 45%;
+}
+
+.firstDot {
+    width: 25px;
+    height: 25px;
+    background-color: #0000ff;
+    position: absolute;
+    border-radius: 100%;
+    left: -11px;
+}
+
+.secondDot {
+    width: 25px;
+    height: 25px;
+    background-color: #0000ff;
+    position: absolute;
+    border-radius: 100%;
+    left: -11px;
+    top: 140px;
+}
+
+
+.third {
+    top: 280px;
+}
+
+.fourth {
+    top: 420px;
+}
+
+.fifth {
+    top: 560px;
+}
+
+.sixth {
+    top: 700px;
+}
+
+.firstCourse {
+    border: 2px solid grey;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 4px 3px 2px rgba(0, 0, 0, 0.2) ;
+    margin-top: 40px;
+   left: 47%;
+   position: absolute;
+   margin-bottom: 50px;
+   
+
+}
+
+.secondCourse {
+    border: 2px solid grey;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 4px 3px 2px rgba(0, 0, 0, 0.2) ;
+    left: 47%;
+    margin-top: 178px;
+    position: absolute;
+
+}
+
+.thirdCourse {
+    border: 2px solid grey;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 4px 3px 2px rgba(0, 0, 0, 0.2) ;
+    left: 47%;
+    margin-top: 315px;
+    position: absolute;
+}
+
+.fourthCourse {
+    border: 2px solid grey;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 4px 3px 2px rgba(0, 0, 0, 0.2) ;
+    left: 47%;
+    margin-top: 460px;
+    position: absolute;
+}
+
+.fifthCourse {
+    border: 2px solid grey;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 4px 3px 2px rgba(0, 0, 0, 0.2) ;
+    left: 47%;
+    margin-top: 595px;
+    position: absolute;
+}
+
+.sixthCourse {
+    border: 2px solid grey;
+    width: fit-content;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 5px 4px 3px 2px rgba(0, 0, 0, 0.2) ;
+    left: 47%;
+    margin-top: 735px;
+    position: absolute;
+}h3 {
+    color: #fff;
+}
+
+
+
+/* .line {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 725px;
+    background-color: blue;
+    margin-top: 50px;
+    left: 50.7%;
+}
+
+.courses h1 {
+font-size: 45px;
+text-align: center;
+}
+
+.courses h1 span {
+color: #0000ff;
+}
+
+.course1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+    margin-top: 50px;
+}
+
+.course1::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.course1 h3 {
+    margin-left: 22px;
+}
+
+.course2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 36%;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+.course2::after {
+    content:'' ;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-left: 188px;
+} */
+
+/* -----FOOTER---------- */
+
+#footer {
+    margin-left: 0;
+    padding: 70px 10px 30px 10px;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+.footerRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* justify-content: center; */
+}
+
+.footerCol {
+   width: 50%;
+   right: 400px;
+}
+
+.footerCol ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.quick {
+    margin-left: 160px;
+}
+
+.quick h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.quicks a,
+.quicks li {
+    color: #fff;
+    padding-top: 15px;
+}
+
+.quicks a li:hover{
+    margin-left: 5px;
+}
+
+
+.socials {
+    margin-left: 100px;
+}
+
+.socials h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.links {
+    margin-left: 30px;
+}
+
+.links li,
+.links a {
+    color: #fff;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.links li i:hover {
+    font-size: 20px;
+}
+
+.links li a i:nth-child(2):hover {
+    color: #0000ff;
+}
+
+.copyRight {
+    margin: 130px 0 20px 0;
+}
+
+.copyRight p {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+#footer2 {
+    margin-left: 0;
+    padding: 70px 10px 30px 10px;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+.footerRow2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.footerCol2 {
+    width: 50%;
+    right: 400px;
+}
+
+.quick2 {
+    left: 160px;
+    position: relative;
+}
+
+.quick2 h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.quicks2 a,
+.quicks2 li {
+    color: #fff;
+    padding-top: 15px;
+    list-style: none;
+}
+
+.quicks2 a li:hover{
+    margin-left: 5px;
+}
+
+.socials2 {
+    left: 4px;
+    position: relative;
+}
+
+.socials2 h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.links2 {
+    margin-left: 30px;
+}
+
+.links2 li,
+.links2 a {
+    color: #fff;
+    padding-top: 15px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.links2 li i:hover {
+    font-size: 20px;
+}
+
+.copyRight2 {
+    margin: 130px 0 20px 0;
+}
+
+.copyRight2 p {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+  /* ------------Mobile View-------- */
+@media(max-width:991px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sectionP{
+        padding-top: 90px  !important;
+    }
+
+    #navBar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        right: -300px;
+        background-color: lavender;
+        width: 200px;
+        top: 0px;
+        align-items: flex-start;
+        height: 100vh;
+        padding: 0px 0 0 20px;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        transition: 0.5s;
+    }
+
+    #navBar.active {
+        right: 0;
+    } 
+    nav ul li {
+        margin-bottom: 20px;
+        top: -130px;
+    }
+
+    nav ul li a:hover::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+
+    #mobile a i {
+        color: #000;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        margin-top: -600px;
+        left: 40px;
+        font-size: 25px;
+        color: #000;
+    }
+
+    .logoImg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logoText h4 {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    #banner {
+        background: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.896)), url(images/happy.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .bannerContainer h2 {
+        font-size: 40px;
+    }
+
+    .bannerContainer p {
+        font-size: 15px;
+    }
+
+    .btn1 {
+        padding: 6px 20px 6px 20px;
+    }
+
+    .btn1:hover {
+        color: #fff;
+        background-color: blue;
+        transform: none;
+    }
+
+    .aboutPack h2 {
+        font-size: 30px;
+    }
+
+    .aboutPack h2 span {
+        font-size: 50px;
+    }
+
+    .aboutPack h2 {
+        font-size: 25px;
+    }
+
+    .aboutPack p {
+        font-size: 15px;
+    }
+
+    #enroll h2 {
+        color: #fff;
+        font-size: 23px;
+    }
+
+    #enroll h2 span {
+        color: #0000ff;
+    }
+
+    #enroll {
+        min-height: 18vh;
+    }
+
+    #team {
+        padding-top: 90px;
+    }
+
+    .teamPack h2 {
+        font-size: 30px;
+    }
+
+    .teamImg {
+        width: 350px;
+        height: 350px;
+    }
+
+    .founder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .story {
+        width: 350px;
+    }
+
+    .story p {
+        font-weight: 100;
+        letter-spacing: 0.1px;
+    }
+
+    .team2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #faq h2 {
+        font-size: 35px;
+    }
+
+    #banner .bannerContainer {
+        padding-left: 40px;
+    }
+
+    .testiContainer {
+        width: 300px;
+        padding: 20px 15px 17px 15px;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-bottom: 30px;
+    }
+
+    .studentPack {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testiImg {
+        width: 150px;
+        height: 150px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+    }
+
+    .testiSpeech {
+        width: 279px;
+        padding-left: 10px;
+        font-size: 13.5px;
+        font-weight: lighter;
+    }
+
+    .testiPack {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .testiContainer hr {
+        margin-top: 25px;
+    }
+
+    .testiContainer h5 {
+        padding-top: 20px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        /* position: absolute; */
+        padding: 16px;
+        color: white;
+    }
+
+
+    .quick {
+        margin-left: 10px;
+    }
+
+    .quick h4 {
+        font-size: 15px;
+    }
+
+    .socials h4 {
+        font-size: 15px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 100%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+
+      .line {
+        left: 35%;
+    }
+
+    .firstCourse {
+        left: 37%;
+    }
+
+    .secondCourse {
+        left: 37%;
+    }
+
+    .thirdCourse {
+        left: 37%;
+    }
+
+    .fourthCourse {
+        left: 37%;
+    }
+
+    .fifthCourse {
+        left: 37%;
+    }
+
+    .sixthCourse {
+        left: 37%;
+    }
+
+    
+}
+
+
+@media(max-width:720px) {
+
+    .courseTopic h2 {
+        font-size: 35px;
+    }
+
+    .cs h3{
+        font-size: 19px;
+    }
+
+    .line {
+        left: 4%;
+    }
+    
+    .firstCourse {
+        left: 8%;
+    }
+
+    .secondCourse {
+        left: 8%;
+    }
+
+    .thirdCourse {
+        left: 8%;
+    }
+
+    .fourthCourse {
+        left: 8%;
+    }
+
+    .fifthCourse {
+        left: 8%;
+    }
+
+    .sixthCourse {
+        left: 8%;
+    }
+}
+
+
+@media(max-width:550px) {
+    .footerRow2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .socials2 {
+        left: 100px;
+        position: relative;
+        top: 50px;
+    }
+
+    .quick2 {
+        left: 100px;
+        position: relative;
+    }
+    
+    
+}
+
+
+
+
+  
