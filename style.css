@@ -88,17 +88,17 @@ nav ul li a:hover::before {
 /* ------------BANNER--------------- */
 #banner {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.596)), url(images/happy.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.596)), url(images/pexels-andrea-piacquadio-3778966.jpg);
     background-size: cover;
 }
 
 #banner .bannerContainer {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-top: 300px;
     padding-left:80px;
 }
 
-.bannerContainer h2 {
+.bannerContainer h2, em {
     font-size: 45px;
     color: #fff;
     padding-bottom: 20px;
@@ -110,6 +110,22 @@ nav ul li a:hover::before {
     max-width: 850px;
 }
 
+.learnBtn {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+} 
+
+.lBtn2 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
 .btn1 {
     padding: 10px 40px 10px 40px;
     display: flex;
@@ -119,6 +135,7 @@ nav ul li a:hover::before {
     background-color:#fff;
     color: blue;
     border: none;
+
 }
 
 .btn1 h3 {
@@ -144,7 +161,7 @@ nav ul li a:hover::before {
 }
 
 .aboutPack {
-    padding: 25px 0px 40px 0px;
+    padding: 20px 0px 40px 0px;
 }
 
 .aboutPack h2 {
@@ -167,9 +184,7 @@ nav ul li a:hover::before {
 }
 
 .mission h2 {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    text-align: start;
 }
 
 .mission h2 i {
@@ -178,9 +193,25 @@ nav ul li a:hover::before {
 
 .principle p  {
     font-size: 20px;
-    text-align: center;
     padding-top: 20px;
 }
+
+.lBtn2 {
+    position: relative;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+}
+
+.lBtn2 a p {
+    color: #fff;
+    text-align: center;
+    background-color: #0000ff;
+    padding: 10px;
+}
+
 
 /* -------------GET STARTED--------------- */
 #enroll, 
@@ -299,7 +330,7 @@ nav ul li a:hover::before {
 }
 
 .story h3 {
-    color: #0000ff;
+    color: #000;
     font-size: 28px;
     padding-bottom: 8px;
 }
@@ -315,6 +346,12 @@ nav ul li a:hover::before {
     font-weight: 100;
     letter-spacing: 0.5px;
 }
+
+.story  .name{
+    font-size: 18px;
+    color:blue;
+}
+
 
 .team2 {
     display: flex;
@@ -731,8 +768,29 @@ nav ul li a:hover::before {
     left: 47%;
     margin-top: 735px;
     position: absolute;
-}h3 {
+}
+
+h3 {
     color: #fff;
+
+}
+
+
+.lBtn {
+position: relative;
+top: 830px;
+width: 200px;
+justify-content: center;
+align-items: center;
+text-align: center;
+left: 50%;
+}
+
+.lBtn a p {
+    color: #fff;
+    text-align: center;
+    background-color: #0000ff;
+    padding: 10px;
 }
 
 
@@ -923,7 +981,7 @@ color: #0000ff;
 }
 
 .socials2 {
-    left: 4px;
+    left: 14px;
     position: relative;
 }
 
@@ -931,22 +989,27 @@ color: #0000ff;
     font-size: 18px;
     margin-bottom: 10px;
     color: #fff;
+    margin-left: 20px;
 }
 
 .links2 {
-    margin-left: 30px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 .links2 li,
 .links2 a {
     color: #fff;
     padding-top: 15px;
-    font-size: 18px;
+    font-size: 25px;
     list-style: none;
+    margin: 0 0px 0 10px;
 }
 
 .links2 li i:hover {
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .copyRight2 {
@@ -958,6 +1021,163 @@ color: #0000ff;
     text-align: center;
     cursor: pointer;
 }
+
+
+
+/* -------------ABOUT MENTOORA------------- */
+
+#aboutBanner {
+        min-height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.596)), url(images/portrait-cheerful-happy-african-man.jpg);
+        background-size: cover;
+}
+
+.aboutBannerContainer {
+    min-height: 100vh;
+    padding-top: 300px;
+    padding-left:80px;
+}
+
+.aboutBannerContainer p {
+    color: #fff;
+    font-size: 18px;
+    max-width: 850px;
+}
+
+.aboutBannerContainer h2 {
+    font-size: 45px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.aboutMento {
+    background-color:rgba(230, 230, 250, 0.377);
+    padding: 10px 15px 20px 15px;
+}
+
+.aboutPackMento {
+    padding: 10px 0px 40px 0px;
+}
+
+.aboutPackMento h2 {
+    font-size: 55px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.aboutPackMento h2 span {
+    color: #0000ff;
+    font-size: 80px;
+}
+
+.aboutPackMento p {
+    font-size: 16.48px;
+}
+
+.aMission {
+    padding: 80px 10px 10px 10px;
+    background-color: lavender;
+}
+
+.aMission h2 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.aMission h2 span {
+    color: #0000ff;
+    font-size: 60px;
+}
+.missionPack {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.missionCol {
+    width: 50%;
+}
+
+.missionImg {
+    width: 500px;
+    height: 350px;
+    margin-left: 30px;
+    border: 5px solid rgba(0, 0, 0, 0.486);
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.644);
+}
+
+.missionText {
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+.aTeam {
+    background-color:rgba(68, 68, 68, 0.24) !important;
+}
+
+.hr {
+    color: blue;
+    width: 100%;
+    margin-top: 80px;
+}
+
+/*-------------- course----------------- */
+
+#courseBanner {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.596)), url(images/pexels-andrea-piacquadio-3769021.jpg);
+    background-size: cover;
+    /* margin-bottom: 100px; */
+}
+
+.courseBannerContainer {
+min-height: 100vh;
+padding-top: 350px;
+padding-left:80px;
+}
+
+.courseBannerContainer p {
+color: #fff;
+font-size: 18px;
+max-width: 850px;
+}
+
+.courseBannerContainer h2 {
+font-size: 45px;
+color: #fff;
+padding-bottom: 20px;
+}
+
+#learnCourse {
+    padding: 40px 10px 50px 10px;
+}
+
+#learnCourse  h1 {  
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.moreCourses {
+    display: flex;
+    flex-direction: column;
+}
+
+.moreCoursesBox {
+    width: 100%;
+    margin: 15px 0 10px 0;
+    border: 2px solid#000;
+    padding: 15px 10px 23px 10px;
+    border-radius: 10px;
+    background-color: lavender;
+}
+.moreCoursesBox h3 {
+    color: blue;
+    padding: 10px 0;
+    font-size: 22px ;
+}
+
 
 
 
@@ -1032,7 +1252,7 @@ color: #0000ff;
     }
 
     #banner {
-        background: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.896)), url(images/happy.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.896)), url(images/pexels-andrea-piacquadio-3778966.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1079,6 +1299,7 @@ color: #0000ff;
 
     #enroll h2 span {
         color: #0000ff;
+        font-size: 23px ;
     }
 
     #enroll {
@@ -1110,7 +1331,15 @@ color: #0000ff;
     .story p {
         font-weight: 100;
         letter-spacing: 0.1px;
+        
     }
+
+    .story  .name{
+        font-size: 18px;
+        color:blue;
+    }
+
+    
 
     .team2 {
         display: flex;
@@ -1228,9 +1457,122 @@ color: #0000ff;
         left: 37%;
     }
 
-    
-}
+    .links2 li a i{
+        font-size: 20px;
+    }
 
+    .links2 li a i:hover {
+        font-size:20px ;
+    }
+
+    #testimonials {
+        margin: 0;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+
+
+    .lBtn {
+        position: relative;
+        top: 830px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: 40%;
+        }
+
+        #aboutBanner {
+            background: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.896)), url(images/portrait-cheerful-happy-african-man.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .aboutBannerContainer h2 {
+            font-size: 40px;
+        }
+    
+        .aboutBannerContainer p {
+            font-size: 15px;
+        }
+    
+        .btn1 {
+            padding: 6px 20px 6px 20px;
+        }
+    
+        .btn1:hover {
+            color: #fff;
+            background-color: blue;
+            transform: none;
+        }
+    
+        .aboutPack h2 {
+            font-size: 30px;
+        }
+    
+        .aboutPack h2 span {
+            font-size: 50px;
+        }
+    
+        .aboutPack h2 {
+            font-size: 25px;
+        }
+    
+        .aboutPack p {
+            font-size: 15px;
+        }
+
+        .aboutPackMento h2 {
+            font-size: 43px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        .aboutPackMento p {
+            font-size: 15.9px;
+        }
+
+        .missionImg {
+            width: 400px;
+            height: 300px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        #courseBanner {
+            background: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.896)), url(images/pexels-andrea-piacquadio-3769021.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .courseBannerContainer h2 {
+            font-size: 40px;
+        }
+    
+        .courseBannerContainer p {
+            font-size: 15px;
+        }
+
+        .learnCourse h1 {
+            font-size: 33px;
+        }
+
+        .courseBannerContainer h2 {
+            font-size: 35px;
+        }
+
+        .courseBannerContainer {
+            min-height: 100vh;
+            padding-top: 400px;
+            padding-left: 30px;
+        }
+}
 
 @media(max-width:720px) {
 
@@ -1243,34 +1585,104 @@ color: #0000ff;
     }
 
     .line {
-        left: 4%;
+        left: 17%;
     }
     
     .firstCourse {
-        left: 8%;
+        left: 21%;
     }
 
     .secondCourse {
-        left: 8%;
+        left: 21%;
     }
 
     .thirdCourse {
-        left: 8%;
+        left: 21%;
     }
 
     .fourthCourse {
-        left: 8%;
+        left: 21%;
     }
 
     .fifthCourse {
-        left: 8%;
+        left: 21%;
     }
 
     .sixthCourse {
-        left: 8%;
+        left: 21%;
     }
+
+    .cs h3 {
+        font-size: 17px;
+    }
+
+    .lBtn {
+        position: relative;
+        top: 830px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: 25%;
+        }
+
+        .missionText {
+            margin-left: 20px;
+            padding-top: px;
+            width: 97%;
+        }
+
+        .lBtn2 {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            left: 100px;
+        }
+        
+
+
 }
 
+@media(max-width:760px) {
+    .missionPack {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .missionText {
+        margin-left: 20px;
+        padding-top: 19px;
+        width: 95%;
+        padding-bottom: 15px;
+    }
+
+    .missionImg {
+        width: 400px;
+        height: 300px;
+        justify-content: center;
+        /* accent-color: ; */
+        /* margin-left: 100px; */
+        margin-bottom: 10px;
+    }
+
+    .lBtn2 {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        left: 150px;
+    }
+
+    #learnCourse h1 {
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    
+}
 
 @media(max-width:550px) {
     .footerRow2 {
@@ -1290,9 +1702,95 @@ color: #0000ff;
         position: relative;
     }
     
+    .socials2 {
+        left: 80px;
+        position: relative;
+    }
+    
+    .copyRight2 p {
+        font-size: 14px;
+    }
+
+    .lBtn2 {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        left: 80px;
+    }
+
+    #learnCourse h1 {
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+
     
 }
 
+@media(max-width:1131px) {
+    .missionText {
+        margin-left: 20px;
+        padding-top: 2px;
+    }
+}
+
+@media(max-width:1049px) {
+    .missionText {
+        margin-left: 20px;
+        padding-top: px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:513px) {
+    .aboutBannerContainer {
+        min-height: 100vh;
+        padding-top: 300px;
+        padding-left: 8px;
+    }
+
+    .missionImg {
+        width: 350px;
+        height: 300px;
+        justify-content: center;
+        /* accent-color: ; */
+        /* margin-left: 100px; */
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width:405px) {
+    .missionImg {
+        width: 350px;
+        height: 350px;
+        margin-left: 15px;
+        border: 5px solid rgba(0, 0, 0, 0.486);
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.644);
+    }
+
+
+}
+
+@media (max-width:377px) {
+    .missionImg {
+        width: 300px;
+        height: 300px;
+        margin-left: 15px;
+        border: 5px solid rgba(0, 0, 0, 0.486);
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.644);
+    }
+
+    
+}
 
 
 
