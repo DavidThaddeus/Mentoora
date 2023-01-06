@@ -114,11 +114,11 @@
     <section class="enroll" id="enroll">
         <h3>Get Started</h3>
         <h2>Why not join us today @<span>mentoora</span>?</h2>
-        <a href="https://twitter.com/mentoora_Ng"><i class="fa-brands fa-instagram" id="tweet"></i>
-       <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/mentoora.ng"><i class="fa-brands fa-instagram" id="tweet"></i>
+       <a href="https://wa.me/+2348082712941"> <i class="fa-brands fa-whatsapp"></i></a>
          <a href="https://twitter.com/mentoora_Ng"><i class="fa-brands fa-twitter" id="tweet"></i></a>
          </i></a> 
-        <button class="btn1"><a href="https://twitter.com/mentoora_Ng">ENROLL NOW!</a></button>
+         <button class="btn1"><a href="mailto: mentooraAcademy@gmail.com">ENROLL NOW!</a></button>
     </section>
  
     <section class="testimonials sectionP" id="testimonials">
@@ -268,14 +268,15 @@
         </div>
     </section>
 
+
     <section id="enroll" class="enroll sectionP">
         <h3>Get Started</h3>
         <h2>Why not join us today @<span>mentoora</span>?</h2>
-        <a href="https://twitter.com/mentoora_Ng"><i class="fa-brands fa-instagram" id="tweet"></i>
-       <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/mentoora.ng"><i class="fa-brands fa-instagram" id="tweet"></i>
+       <a href="https://wa.me/+2348082712941"> <i class="fa-brands fa-whatsapp"></i></a>
          <a href="https://twitter.com/mentoora_Ng"><i class="fa-brands fa-twitter" id="tweet"></i></a>
-         </i></a>
-        <button class="btn1"><a href="https://twitter.com/mentoora_Ng">ENROLL NOW!</a></button>
+         </i></a> 
+        <button class="btn1"><a href="mailto: mentooraAcademy@gmail.com">ENROLL NOW!</a></button>
     </section>
 
     <section id="faq" class="sectionP">
@@ -335,10 +336,8 @@
         
     </section>
 
-  
-
-
-
+    
+    
 
     <!-- --------JAVASCRIPT-- -->
 
@@ -346,52 +345,52 @@
 
     <script type="text/javascript">
         var acc = document.getElementsByClassName("accordion");
-var i;
+        var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+
+
+        /---------------CAROUSEL--------/ 
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
     }
-  });
-
-
-/---------------CAROUSEL--------/ 
-  var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-}
 
     </script>
 </body>
